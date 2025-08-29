@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đã Xác Minh</title>
+    <!-- Tải Tailwind CSS để tạo kiểu dáng đẹp mắt -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Hiệu ứng nhấp nháy mạnh mẽ hơn */
+        @keyframes pulse-strong {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5; /* Điều chỉnh để hiệu ứng rõ rệt hơn */
+            }
+        }
+
+        .animate-strong-pulse {
+            animation: pulse-strong 1s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* Giảm thời gian để nhấp nháy nhanh hơn */
+        }
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1381100783345660');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1381100783345660&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-76DB1HVKBT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-76DB1HVKBT');
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Microsoft Clarity Tracking Code -->
+    <!-- Dán đoạn mã của bạn vào đây -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "MÃ_ID_CLARITY_CỦA_BẠN");
+    </script>
+    <!-- End Microsoft Clarity Tracking Code -->
+
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Container chính giữa màn hình -->
+    <div class="bg-white p-8 rounded-2xl shadow-xl max-w-sm w-full text-center space-y-6">
+
+        <!-- Tiêu đề -->
+        <!-- Đã thêm class animate-strong-pulse để áp dụng hiệu ứng nhấp nháy mạnh hơn -->
+        <h1 class="text-2xl font-bold text-red-600 animate-strong-pulse">
+            Ưu Đãi Sắp Hết - Mua Ngay
+        </h1>
+
+        <!-- Đoạn văn bản mô tả -->
+        <p class="text-gray-600">
+            Nhấp vào nút bên dưới để xem Giá Ưu Đãi + Thông Tin Sản Phẩm.
+        </p>
+
+        <!-- Thêm hình ảnh giảm giá -->
+        <!-- Đã thay đổi đường dẫn ảnh thành một đường dẫn trực tiếp và thêm lớp Tailwind để căn giữa và điều chỉnh kích thước -->
+        <img src="https://suno.vn/blog/wp-content/uploads/2016/12/flash-sale.png" />
+
+        <!-- Nút bấm với liên kết được gắn vào -->
+        <a href="https://form.jotform.com/trimunso1/tinhchatDacTri" target="_blank" rel="noopener noreferrer" class="block w-full">
+            <button class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-2xl transition-transform transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-lg flex items-center justify-center space-x-2">
+                <!-- Thêm icon động sale vào đây -->
+                <span class="animate-pulse">👉</span>
+                <span>Tiếp Tục Mua Sắm</span>
+            </button>
+        </a>
+
+    </div>
+
+</body>
+</html>
